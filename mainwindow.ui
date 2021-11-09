@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>950</width>
+    <height>719</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_6">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QWidget" name="widget" native="true">
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QTabWidget" name="tabWidget">
+         <property name="font">
+          <font>
+           <family>Arial Black</family>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>20</width>
+           <height>20</height>
+          </size>
+         </property>
+         <widget class="QWidget" name="tab">
+          <attribute name="title">
+           <string>Moving_robot Communications</string>
+          </attribute>
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QWidget" name="widget_3" native="true">
+             <layout class="QHBoxLayout" name="horizontalLayout">
+              <item>
+               <layout class="QGridLayout" name="gridLayout">
+                <item row="0" column="0">
+                 <widget class="QLabel" name="label_linerspeed">
+                  <property name="text">
+                   <string>Linear_speed</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="1">
+                 <widget class="QLabel" name="label_angerspeed">
+                  <property name="font">
+                   <font>
+                    <family>Arial Black</family>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Angle_speed</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="0">
+                 <widget class="QWidget" name="widget_liner_speed" native="true">
+                  <property name="minimumSize">
+                   <size>
+                    <width>300</width>
+                    <height>300</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>300</width>
+                    <height>300</height>
+                   </size>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="1">
+                 <widget class="QWidget" name="widget_anger_speed" native="true">
+                  <property name="minimumSize">
+                   <size>
+                    <width>300</width>
+                    <height>300</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>300</width>
+                    <height>300</height>
+                   </size>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="0">
+                 <widget class="QLabel" name="label_linerforward">
+                  <property name="text">
+                   <string>positive</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="1">
+                 <widget class="QLabel" name="label_angerforward">
+                  <property name="font">
+                   <font>
+                    <family>Arial Black</family>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>positive</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QGroupBox" name="groupBox">
+             <property name="title">
+              <string>Logging</string>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_2">
+              <item>
+               <widget class="QListView" name="listView_logging"/>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="widget_2" native="true">
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <item>
+        <widget class="QGroupBox" name="groupBox_2">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="title">
+          <string>Ros Service</string>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_5">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QWidget" name="widget_service_info" native="true">
+            <layout class="QVBoxLayout" name="verticalLayout_4">
+             <item>
+              <widget class="QLabel" name="label_ip">
+               <property name="text">
+                <string>ROS Service IP</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEdit_IP"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_port">
+               <property name="text">
+                <string>ROS Service port</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEdit_port"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_onLine_robot">
+               <property name="text">
+                <string>OnLine Robot</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="comboBox_robotname"/>
+             </item>
+             <item>
+              <widget class="QCheckBox" name="checkBox_auto_connect">
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="layoutDirection">
+                <enum>Qt::LeftToRight</enum>
+               </property>
+               <property name="text">
+                <string>auto_connect</string>
+               </property>
+               <property name="checked">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_4">
+               <item>
+                <widget class="QPushButton" name="pushButton">
+                 <property name="text">
+                  <string>test</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="pushButton_connect">
+                 <property name="text">
+                  <string>connect</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="widget_5" native="true">
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <widget class="QLabel" name="label_setliner">
+            <property name="font">
+             <font>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>linear_speed:100</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSlider" name="horizontalSlider_linerspeed">
+            <property name="minimum">
+             <number>0</number>
+            </property>
+            <property name="maximum">
+             <number>100</number>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_setangers">
+            <property name="font">
+             <font>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>anger_speed:180</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSlider" name="horizontalSlider_angerspeed">
+            <property name="maximum">
+             <number>180</number>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTabWidget" name="tabWidget_interation">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="currentIndex">
+          <number>1</number>
+         </property>
+         <widget class="QWidget" name="tab_key">
+          <attribute name="title">
+           <string>key_board</string>
+          </attribute>
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <layout class="QGridLayout" name="gridLayout_2">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <item row="0" column="0">
+              <widget class="QPushButton" name="pushButton_leftup">
+               <property name="minimumSize">
+                <size>
+                 <width>90</width>
+                 <height>90</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>u</string>
+               </property>
+               <property name="shortcut">
+                <string>U</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QPushButton" name="pushButton_up">
+               <property name="minimumSize">
+                <size>
+                 <width>90</width>
+                 <height>90</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>i</string>
+               </property>
+               <property name="shortcut">
+                <string>I</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2">
+              <widget class="QPushButton" name="pushButton_rightup">
+               <property name="minimumSize">
+                <size>
+                 <width>90</width>
+                 <height>90</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>o</string>
+               </property>
+               <property name="shortcut">
+                <string>O</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QPushButton" name="pushButton_left">
+               <property name="minimumSize">
+                <size>
+                 <width>90</width>
+                 <height>90</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>j</string>
+               </property>
+               <property name="shortcut">
+                <string>J</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QPushButton" name="pushButton_stop">
+               <property name="minimumSize">
+                <size>
+                 <width>90</width>
+                 <height>90</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>k</string>
+               </property>
+               <property name="shortcut">
+                <string>K</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="2">
+              <widget class="QPushButton" name="pushButton_right">
+               <property name="minimumSize">
+                <size>
+                 <width>90</width>
+                 <height>90</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>l</string>
+               </property>
+               <property name="shortcut">
+                <string>L</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QPushButton" name="pushButton_leftdown">
+               <property name="minimumSize">
+                <size>
+                 <width>90</width>
+                 <height>90</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>m</string>
+               </property>
+               <property name="shortcut">
+                <string>M</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QPushButton" name="pushButton_down">
+               <property name="minimumSize">
+                <size>
+                 <width>90</width>
+                 <height>90</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>,</string>
+               </property>
+               <property name="shortcut">
+                <string>,</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="2">
+              <widget class="QPushButton" name="pushButton_rightdown">
+               <property name="minimumSize">
+                <size>
+                 <width>90</width>
+                 <height>90</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>.</string>
+               </property>
+               <property name="shortcut">
+                <string>.</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="tab_voice">
+          <property name="minimumSize">
+           <size>
+            <width>40</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <attribute name="title">
+           <string>voice</string>
+          </attribute>
+          <widget class="QPushButton" name="pushButton_voice">
+           <property name="geometry">
+            <rect>
+             <x>100</x>
+             <y>100</y>
+             <width>80</width>
+             <height>80</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>40</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>80</width>
+             <height>80</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="../build-mbot_controller-Desktop_Qt_5_9_9_MinGW_32bit-Debug/resource/resource.qrc">
+             <normaloff>:/voice_record.png</normaloff>:/voice_record.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>80</width>
+             <height>80</height>
+            </size>
+           </property>
+           <property name="shortcut">
+            <string>Return</string>
+           </property>
+           <property name="autoDefault">
+            <bool>false</bool>
+           </property>
+           <property name="default">
+            <bool>true</bool>
+           </property>
+           <property name="flat">
+            <bool>false</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_state">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>60</y>
+             <width>101</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>按下说话</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QToolButton" name="toolButton_stop">
+           <property name="geometry">
+            <rect>
+             <x>230</x>
+             <y>220</y>
+             <width>51</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>9</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>STOP</string>
+           </property>
+           <property name="icon">
+            <iconset resource="../build-mbot_controller-Desktop_Qt_5_9_9_MinGW_32bit-Debug/resource/resource.qrc">
+             <normaloff>:/dot_red_48px_1174475_easyicon.net.png</normaloff>:/dot_red_48px_1174475_easyicon.net.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>25</width>
+             <height>25</height>
+            </size>
+           </property>
+           <property name="shortcut">
+            <string>Space</string>
+           </property>
+           <property name="popupMode">
+            <enum>QToolButton::DelayedPopup</enum>
+           </property>
+           <property name="toolButtonStyle">
+            <enum>Qt::ToolButtonTextUnderIcon</enum>
+           </property>
+           <property name="autoRaise">
+            <bool>false</bool>
+           </property>
+           <property name="arrowType">
+            <enum>Qt::NoArrow</enum>
+           </property>
+          </widget>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>950</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="../build-mbot_controller-Desktop_Qt_5_9_9_MinGW_32bit-Debug/resource/resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
